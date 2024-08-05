@@ -4,11 +4,11 @@ version 2
 :: gfx/
 :: gfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
-OC0wNCAxOTowMjozMiIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
+OC0wNSAwMDo0OTo0MiIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
 MG5pbA==
 :: gfx/0.gfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
-OC0wNCAxOTowMjozMSIscmV2aXNpb249MzY5XV1sejQAUA4AALxAAADzFHtbMF09e2JtcD1weHUA
+OC0wNSAwMDo0OTo0MSIscmV2aXNpb249NDI1XV1sejQAFQ4AAGxEAADzFHtbMF09e2JtcD1weHUA
 QyAICATwMCxmbGFncz0wLHBhbl94CADKeT0wLHpvb209OH0sMQD-B4BYAKg-DygOAR4BCAAITiAz
 MAcQBxBFAC8-IAcARQAcHABFAF8gBzAHgIoAK08QBzNgzgAf-wlIEGgACD8PGAAIAR4BDggQTggg
 MwdAByBIABwi8AGNAEBOCAAIkQBfEBcjBwDQAB_BGA8PAR4BKE5IAC8zCKIBI8OwBDAFAAUJIAUA
@@ -21,58 +21,57 @@ BicmB0YX6QEe-wgQBCswBEsABAIQKwAEYARQBAJQBGAEYEYAHt8LUAQbMAQCSwAEECsQRwAnAD0A
 AI4ALysgjQAokDggWBAIBzgQWAIAPyA4kEAAHPAFAAMQCwALIAMLEyACOAIQCAk4EDgFA68JKBAC
 OAIgAhgCCgQdgZAXUCcABxBXAgA-BwAnkgAd-wOAFxAHICdAF4AHcBcwBwAXAAcUAR1-B3AHQAfw
 Ed4FIEAQSiAKAgD-AwkACQogCSoJQApAGQpQCQpAKoUEHWEgKkAKAAoEAEAJCglQRQAQYAUAD0gA
-HTkwCmACAA8NBUsAagQf8DEArJUICAQEWQQJURkCAE8JBFkEQgAg8QUhBBEZIQkRGQQJBAAEARkR
-BAAJBBEAPxEEIVMAIVApABkECUYAEAGtBf8LEAQBCVAUCQRQCQEEEAQpAQQABBEJFBAEGQQeATwf
-NjEAvv8GCAgEoEcQFxYHEAcGJyAXFjA3MAfQQQAcz-ARRyA3BgcQBzAXcDsAHW8ZF1BXMEfjADwf
-ODEAjfAxOCAE8LQG8CYGAAbwJA0gBvAiDUAM8CANUAzwHwxgDCAG8BoNgAwABgAN8BgMoA0gDfAX
-DPATRhBWEBYQDCBWIAoAwlYQZgBmABYADDBmAAIAYRYgFgAWUAIAkHAWMBZQHVA9MAQA8Q1tIB0w
-PTAdIB0AHVAdMA0AHbANIB0wHVBtAF0QBAD-SSAdMF0gTRBtAG0AbRBNMB0wbfA2DPAODPAHDPAQ
-DPAEHPASDPACDPAUDPABDPAVDPAAAfAWDBAMsAzwFwEAAQAMkAHwGQEgDIAB8B0BgAHwHgHwLgHw
-IgGaCQwZMhQBADMGEDdHDNEABwAXIBcAFxsAFxArBACPBwAHMAcgNxDFAR4PMQDd1ggIBBVQFgdA
-BjcgJkAKAA9DABxyJgUmBQYHBgQAMBcABkUIAQIAL-AKvgAtMzEuMjMANzIuNgEAEjdBAB81QQD-
-QABlBRMKwAEREM4BBdwBPyYFJhoCHKZAJiA3BkAHFlAVCgAPQwAcowD3AzwnTBdcFxwCABNcQQAf
-MUEAFI-3AAxXPBf8EzcAHP8CZwB3PDdMJ1wXLAccF1wXXBdAABz-AQBXAPcDHEc8Nzw3DAccNzxA
-AB7-B3cwNwAcJwwHAAwnHAcAJyA3MAdgB2BGABz-AHcwJwAsJzwnLAAnMCfwBT4AHLNnQDcsJwAH
-HCcMAIIAbyAMIAdgBwsBH-8HByBHAAwnABcAJwwARyA3MBcwDAAXUEkAHaAXXCdMJ0w3PDc8CAAP
-CgIeL-wwMQAcYFwXTCdMJ8MBIUwnCwIPPwAb-wAXPEcsRyw3LEcsVxxXHEcDAh6wB2AHUAwHYAcA
-DED7AQ--ASCf8AMcUBzwAwzgOAAcAm4AMUAMAAgAH2DzAR9hB1AXABwgBAAB6gGvFwAMMBdQFyAM
-EPQBHwD8AyAHLPwBXzc8dwBnQAAcj-wTFzxXDPcA_wEeExwCAAAFAj889wNBAB0wJyxH9QEQLAIE
-b0ccJwBXAP4BHxJgAgIhUAwDAh9w_wAdr-AEDCAMYAzwB3f-ASITYO4DP2B3AP4BHzAQDCDwASEc
-AAQAAf4BHwcEAR9AAPcDLHwDPzcsh-kBHjD3CQx8BS-3CfkFHhOHdAAP9QEfYQBXAKcMV-IBH6fu
-ACBEdyAnAPAFTiw3MCf0AQ-xBRsvwHfxBS4O-QEP7gUfPxAMAP4BIp8FYBVQJUA1MPUHEx0v8BAz
-AB6fYAVQFUAlMPUUOAAcQfUCMDUCAC-1AjoAHCIECQIAVHIgBAJAAwA-UALgRwAlL-AggQAmNgIE
-YAMAH3BHABoQEfAB-xf3BBNXEycDFyMXIxsDBwAjGwMQUxADCzMQUxAjCxMgM0AUUBRAOY0UHe-l
-AFUQRSA1MCVAFVAFYD0AHO91AGUQVSBFMDVAJVAVYPQWG08QBPXwbwAcr4UAlRBVELUA9QU5ABz-
-BZAeAB4gTjAOCA4wTiAeAx5AC2ALaBQe-wIUC1ALQAMACxADEAMAEwADAEEAHf8GBgNgC1ALAxAD
-IAswCwALAzADABMQNAEcL-DwdgAcBN8Df0UgVRBlAHWxAyN-NSBFEFUA5awAHg8xAP8PQQgIBIx6
-CW78BAecB5y7BQ_dABQPMQDV8Q9AQATwCVjwGlgQWAB4AFgQSKBYgPgDPw-4ABBYABi0HlFwKD44
-Pr8eoTg_GD4YAJhOCHAaAAXTHgIpABEYmh6hACg_KE4IgAhOEDAfcghOEE4IABgoHjGgMzBCH3EQ
-BzMwMwcQgh4wIDOwUxWgByAH0AdQBzAXI8EP8DQHEAX3BhVXBXzwCPcQDBdMoASwN0xXTLcMFxwH
-HKAJBQAFEFoAJ3wXfFccJ3wABDkEMAkABQAFChk4Chf8BDc8F3wQCB4CFQBxCUgKFxwXzM4OYBwH
-TCAVUEEAkgB6FxwX-AA3DIscATAAMAQwCskaBEQAMSAVoD0AAQ4A8QEFVxXwBgUn-AJXLJcV8AQV
-CgD0BEcMNyXwAiU3-ABXLEc8FzXwADUMACD1CCIAQxxXHCcKADSn9QhKAMD1CRf8BEcsFwX3BoUK
-APAVHPcLdRccB7wXLEccZyyXLDcVMBUX7BcsNyxXTAcMN2wnFTAV7gCARzxHbDcMB0wQAAAQATNX
-PFcuAGD3Cxz3C4U0AaAV9waF8AH3BhBXzxrQJzAnQEcgN-AQBwAcJ38OANUKMCcABxEAEQwRABIM
-8AgBEgAALgDAJyBHIAcgAn8OAvADzAnxACcwNzAHEAKdAvACB-ACDBkNMAcQvQ4AxQYXUAcQDUIN
-Ag0SDRAAABoAMFAM4EQNYgcQDRINMh0AMpAckBMAACAAcgAMcBxwDABLAFktIg0SLT8AIPAGegsC
-DAAwYAzQFwBDHRctN2QAAI0NcQDXgAU3FRczAGDwAlqH8Aa6C0AHEBdAxROAClk3HCegDJA5AABY
-HLAnMAoZSidMB1Ac0NcL8wIHAFcQF0AKCVoXXAdQHJAMIBUAUEAHIAppmh5hHAcADPAEhACQAFdQ
-FwAKaQUXegIBbwAAYgoQQGQcUAppJ0wAaAFDgAdgegsAECAuHjELMAqiCFAKAQUXTJgcAYMBghAE
-SxAEGyAKcR9gAQUHHAcshAEWTJUBA2Ye1wJLCgQJJBoXXAcAJ0yiAQCAHrMQKwAKBDkaJ0w3QKsB
-ABYAEFAxAFEZNxxHQLABQBAMAAcbHiECUG4AISSHuQAAKh4AEABROQU3BReuAB8APR4AUy05LjI1
-MQRmLTIuODgzAQAPzxYBoUBABBBKMCpQClBwHz8QBAkCAAOwEAogCjAKAApQCjCTHzHyCBAyHQIT
-ABAgoh-BNyAEAtACBEAJKgkwAB0iIAe0H4EQBALwAAIEUM0covAEBALwAgIEIBkgHaLwAwQC8AQC
-BCAJHwByAwLwBgIQKhwAgB04EARZFFkURxsCth5w8ApYAAlRGagbAlcbsRADCxNAR-ABCAc4GQAk
-CRFqGxAAzR5RFxYH8AIzAALTG0AJUBQA8R5RBwYn8AMYAALkGyAEYAMfYxcWMEegWEgAEBmlGyAZ
-ABcfIDcwOBpBF2A4EDEAIiEZuxsAYgCQEAdgBzAXAFeAqQAQJMwboBACGALwBUf1ClChFoAAVyA3
-kOUQZeQWA9AUEHcnGHGA1TBVBjcg6hTAAIcAFyAHcMVQRSZQPgUwNxMnVxhjB3C1cFVgEQAAXxig
-MAsgpZAlFgfAB-QKABIAoSALMJWwFQY3oAcCCwCbBQGQCcIAhdAFJtAjGwMgNyCbCfAfhdAFwCYA
-U-ABBQB1sBWgNwYAAwszIB4AHoA1EEWQJcAHFgBTIE5gAwA1EFVwNUoXYGAVACMLEyMKYHALAMVQ
-RRQA8QFQJhAzME5QCwMAFQClMFUAvwCQIDcGIBRAHgMeyAlDEOUQdekAgEAHFiAUYAtA2gmhEPUJ
-JgUmUBUQOTMKYBPw1gbwLlcaECxXGhAqVxoQKFcaEidXGhQiVxoSIFcaSx8M8BtXGhuQVxobgFca
-GtBXGi0HYFkaSWAHQAdcGhqgXBoRRlwaEA9cGlGgBzAHoF8aEApfGlCgBBArcGIaQqAES2BkGlRg
-BAIrcGgaMlAEoGoaEEAJAGAdATAEAqBvGm4gBPAvBJBzGg_3Ax8PKAgBFDFvF5MtNS40Mjg1NzEG
-AAJBAB8xQQD--wQAQAob-wEAD8gNGg6CAA8xAP----------------------------93UG09OH19
+HTkwCmACAA8NBR8PMQDgZQRZBAlRGQIATwkEWQRCACDxBSEEERkhCREZBAkEAAQBGREEAAkEEQA-
+EQQhUwAhUCkAGQQJRgAQAa0F-wsQBAEJUBQJBFAJAQQQBCkBBAAEEQkUEAQZBE8BHg8xAOD-A6BH
+EBcWBxAHBicgFxYwNzAH0HIAHb8RRyA3BgcQBzAXcDsAHW8ZF1BXMEcUAR4PMQCs8DE4IATwtAbw
+JgYABvAkDSAG8CINQAzwIA1QDPAfDGAMIAbwGg2ADAAGAA3wGAygDSAN8BcM8BNGEFYQFhAMIFYg
+CgDCVhBmAGYAFgAMMGYAAgBhFiAWABZQAgCQcBYwFlAdUD0wBADxDW0gHTA9MB0gHQAdUB0wDQAd
+sA0gHTAdUG0AXRAEAP9JIB0wXSBNEG0AbQBtEE0wHTBt8DYM8A4M8AcM8BAM8AQc8BIM8AIM8BQM
+8AEM8BUM8AAB8BYMEAywDPAXAQABAAyQAfAZASAMgAHwHQGAAfAeAfAuAfAiAZoJDBwyRQEgEDdH
+DNEABwAXIBcAFxsAFxArBAB8BwAHMAcgNz4HMzEuMlEANzIuNgEAEjdfAB41pAEPQQD-MaYVUBYH
+QAY3ICZACgAPUwAsciYFJgUGBwYEADAXAAa1CAECAC-wCi8BLg9BAP9zEwrQAREQ3gEF7AE-JgUm
+WgAspkAmIDcGQAcWUBUKAA9TACyjAPcDPCdMF1wXHAIAE1xRAB8xUQAkj-cADFc8F-wTRwAs-wJn
+AHc8N0wnXBcsBxwXXBdcF1AALP8BAFcA9wMcRzw3PDcMBxw3PFAALv8HdzA3ABwnDAcADCccBwAn
+IDcwB2AHYFYALP8AdzAnACwnPCcsACcwJ-AFTgAss2dANywnAAccJwwAogBvIAwgB2AHSwEv-wcH
+IEcADCcAFwAnDABHIDcwFzAMABdQWQAtoBdcJ0wnTDc8NzwIAA_KAi4v-DBBACxgXBdMJ0wnMwIh
+TCeLAg9PACv-ABc8RyxHLDcsRyxXHFccR4MCLrAHYAdQDAdgBwAMQHsCD38CMJ-wAxxQHPADDOBI
+ACwCjgAxQAwACAAfYHMCL2EHUBcAHCAEAAFqAq8XAAwwF1AXIAwQdAIvAPwEIAcsfAJfNzx3AGdQ
+ACyP-BMXPFcM9wB7Ai4THAIAAIUCPzz3A1EALTAnLEd1AhAsAgVvRxwnAFcAfgIvEmCCAiFQDIMC
+H3A7AS2v8AQMIAxgDPAHd38CMhNg7gQ-YHcAfgIvMBAMIHACIRwABAABfgIfB0QBL0AA9wMsXAQ-
+NyyHeQIuMPcJDNwGL-cJeQcuE4eUAA91Ai9hAFcApwxXcgIfpy4BMER3ICcAcAdOLDcwJ3QCD3EH
+Ky-Ad3EHPg59Ag9uBy8-EAwAfgIynwVgFVAlQDUw9WkOLh8QQwAun2AFUBVAJTD1FEgALEH1AjA1
+AgAv9QJKACwiBAkCAFRyIAQCQAMAP1AC4FcANS-wIKEANjYCBGADAB9wVwAqEBFwAv8X9wQTVxMn
+AxcjFyMbAwcAIxsDEFMQAwszEFMQIwsTIDNAFFAUQDmdFx3v5QBVEEUgNTAlQBVQBWA9ABz-AHUA
+ZRBVIEUwNUAlUBVgBXgaHC-18G8AHJyFAJUQVRC1APVqABQxTQGTLTUuNDI4NTcxBgACSQAcMUkA
+-waQHgAeIE4wDggOME4gHgMeQAtgCyBUACz-A-AUC1ALQAMACxADEAMAEwADAFEALf8GBgNgC1AL
+AxADIAswCwALAzADABMQVQAtHzBBACwEnwR-RSBVEGUAdU4ALANhBH81IEUQVQDl3AAuD0EA----
+efEPQEAE8AlY8BpYEFgAeABYEEigWID4Az8P_AAQWAAYbCNRcCg_OD53I6E4Phg_GACYTghwGgAF
+iyMCKQARGFIjoQAoPihOCIAIThDoI3IIThBOCAAY4CIxoDMw_iNxEAczMDMHEDojMCAzsAsaoAcg
+B9AHUAcwFyP5E-A0BxAF9wYVVwV88Aj3EAwXTKAEsDdMV0y3DBccBxygCQUABRBaACd8F3xXHCd8
+AAQ5BDAJAAUABQoZOAoX-AQ3PBd8EMAiAhUAcQlIChccF8y2EmAcB0wgFVBBAJIAehccF-wANwxD
+IQEwADAEMAqBHwREADEgFaA9AAEOAPEBBVcV8AYFJ-wCVyyXFfAEFQoA9ARHDDcl8AIlN-wAVyxH
+PBc18AA1DAAg9QgiAEMcVxwnCgA0p-UISgDA9QkX-ARHLBcF9waFCgDwFRz3C3UXHAe8FyxHHGcs
+lyw3FTAVF_wXLDcsV0wHDDdsJxUwFe4AgEc8R2w3DAdMEAAAEAEzVzxXLgBg9wsc9wuFNAGgFfcG
+hfAB9wYQV4cf0CcwJ0BHIDfwEAcAHCcXEgB9DTAnAAcRABEMEQASDBgLARIAAC4AwCcgRyAHIAJ-
+DgLwAyQM8QAnMDcwBxACnQLwAgfwAgxBEDAHEL0OAMUGF1AHEA1CDQINEg0QAAAaADBQDOBsEGIH
+EA0SDTIdADKQHJATAAAgAHIADHAccAwASwBZLSINEi0-ACDwBiIOAgwAMGAM0BcAQx0XLTdkAAC1
+EHEA14AFNxUXMwBg8AJah-AGYg5ABxAXQA0YgApZNxwnoAyQOQAAECGwJzAKGUonTAdQHNB-DvMC
+BwBXEBdACglaF1wHUByQDCAVAFBAByAKaVIjYRwHAAzwBIQAkABXUBcACmkFF3oCAW8AAJoMEEAc
+IVAKaSdMAGgBQ4AHYHoLABAg5iIxCzAKWgpQCgEFF0xQIQGDAYIQBEsQBBsgCikkYAEFBxwHLIQB
+FkyVAQMeI9cCSwoECSQaF1wHACdMogEAOCOzECsACgQ5GidMN0CrAQAWABBQMQBRGTccR0CwAUAQ
+DAAH0yIhAlBuACEkh7kAAOIiABAAUTkFNwUXrgAeAPUiDz0EHnEQSjAqUApQJSQ-EAQJAgADsBAK
+IAowCgAKUAowSCQx8ggQ5yECEwAQIFckwTcgBALQAgRACSoJMLUhIiAHaSSBEAQC8AACBFCCIaLw
+BAQC8AICBCAZ1SGi8AMEAvAEAgQgCR8AcgMC8AYCECocAIAdOBAEWRRZFPwfAmsjcPAKWAAJURld
+IAIMILEQAwsTQEfwAQgHOBkAJAkRHyAQAIIjURcWB-ACMwACiCBACVAUAKYjUQcGJ-ADGAACmSAg
+BGC4I2MXFjBHoFhIABAZWiAgGQDMIyA3MO0eQRdgOBAxACIhGXAgAGIAkBAHYAcwFwBXgKkAECSB
+IKAQAhgC8AVH9QpQ5hqAAFcgN5DlEGU5GwMFGRB33BxxgNUwVQY3IB8ZwACHABcgB3DFUEUmUDsF
+MDcTJwwdYwdwtXBVYBEAABQdoDALIKWQJRYHwAeZDAASAKEgCzCVsBUGN6AHpwwAmAUBFQvCAIXQ
+BSbQIxsDIDcgIAvwH4XQBcAmAFPwAQUAdbAVoDcGAAMLMyAeAB6ANRBFkCXABxYAUyBOYAMANRBV
+cDWPG2BgFQAjCxO4C2BwCwDFUEUUAPEBUCYQMzBOUAsDABUApTBVAL8AkCA3BiAUQB4DHj0LQxDl
+EHXpAIBABxYgFGALQE8LoRD1CSYFJlAVEDm4C2AT8NYG8C4MHxAsDB8QKgwfECgMHxInDB8UIgwf
+EiAMH0sfDPAbDB8bkAwfG4AMHxrQDB8tB2AOH0lgB0AHER8aoBEfEUYRHxAPER9RoAcwB6AUHxAK
+FB9QoAQQK3AXH0KgBEtgGR9UYAQCK3AdHzJQBKAfHxBACQBgHQEwBAKgJB9uIATwLwSQKB8PMggw
+HjDPDQ8xAP--2ADiKx-wkwAeDzEA------_eD-8I----------------FQ8xAP--71BtPTh9fQ==
 :: gfx/1.gfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTA3LTI5IDIxOjEyOjU1Iixtb2RpZmllZD0iMjAyNC0w
 Ny0yOSAyMToxMzoyMCIscmV2aXNpb249Nl1dbHo0AMsAAAB8MQAA8yF7WzBdPXtibXA9cHh1AEMg
@@ -83,37 +82,40 @@ Hb8cLx3-HCibABwv8PAxAP------------------------------------------------------
 :: map/
 :: map/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
-OC0wNCAxOTowMjozMiIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
+OC0wNSAwMDo0OTo0MiIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
 MG5pbA==
 :: map/0.map
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
-OC0wNCAxOTowMjozMSIscmV2aXNpb249MzE4XV1sejQADAQAADWBAAD-Dnt7Ym1wPXVzZXJkYXRh
-KCJpMTYiLDYwLDM0LCIwAQD--zA-MTMwAQCHL2QwAQCzL2Uw6AL-cg8BAP---1YvOTABANovMjAB
-AEgvYjABAFBfNDAwODDwAHMIAQAvODABALI-MzgwaAT-bQLgAi4yMAQADmQCDyUJ7R8wAQBCPzE4
-MAEA------------Hz8xNDABACwPbBT---_LL2MwAQD-----IPEcIiksaGlkZGVuPWZhbHNlLG5h
-bWU9Im9iamVjdHMiLHBhbl94PS0xMjkuMQ0A8gJ5PS03My42NSx0aWxlX2g9OAkAz3c9OCx6b29t
-PTF9LE4gfhA1BAAWMQQALzQ5BABXDgEADwABbyY1MaAAD-AAwQ8BAAEmNDikAA8EAB0PNAEJD-AA
-qS81MQQAAC8yMEQACg-wAKYvYTAoAyMPBAAAPzVhMNQDdi80OfAAJw8BAAEiNDlYAA8QAgEvMDD4
-AHcvNTGoADEO4AAPAQD--6ciNDCcBA8BANUE8AUPcAFtAQQAHzLwANADgAAOXAYP8AD-4An8Ag4E
-AA8UAxIO8AAPqANQCAQAHznwAA8FPAAfOQQAAQ9EACMvM2UEAAMFKAAfMkAAAQ8EABgfOawAKAgE
-Ag9EADUfMQQABA5IAA6EAA8EADUWYWgBCXQBHzhEAFwDSAAM0AovNDkEAEAfMQQAAB85BAAcHzEE
-AAAfOfAAKy4wMDQBDwQAhw-wAP8kDtQCD-AAyw-kAQ0mNTEEAC80OfAAsyY1MNQADogPDygADQ-w
-AJ8PAQAtBAgBLzQ58ADTDvgAD-AA0wABAC4zZvQFD-AAzSc1MHQADwQAbW8yMDAzNjDkAdoP8AAl
-CWAMLzIw8ADKAewAGzkEAA74AA4sAA8EAHEvMjDsAC8M_AAIBAAfOQQAgB8xBAAYHzkEAP9yD04g
-A29ncm91bmRNID8PAQD-----------------ex82bzLEPzZkMAEA----------------------_B
-D00gA0ZkZWNvSyA0NS42SiBPMjguMUog------------6z83MTABANpvNmEwMDcw8ADbD-QAFR83
-zAKwJjZhBAAPAQALDiQAD9wBpQ-kARUAJAAP3AHVIjAwKAAvNzABANciNmEEAA-wAN0vNzABAP--
-----OABMBQ8gAAoSOSQADigAD-AApAfQACI2YggADAEAIzYzIAAABAAPKWm0DtAAD_QBxwg4Cg8B
-AAMOIAAPAQCpLzZhGAkPBPACHzfwALwArAMPOAwMD-AAuw-kAQAEGAAPuAO5JzZiDAAL3AAMEAAP
-AQClLjZhmAUEjAUvNzABAMMA3AAPSiD-pktiYWNrm0AVNJlAXzEwMy4zTyAEUG09Mn19
+OC0wNSAwMDo0OTo0MSIscmV2aXNpb249Mzc0XV1sejQAowQAAG2BAAD-Dnt7Ym1wPXVzZXJkYXRh
+KCJpMTYiLDYwLDM0LCIwAQD--zA-MTMwAQCHL2QwAQCzL2Uw6AL--w0FAQCPNDAwODAwMjABAP-k
+PzI4MAEAry85MAEA2g_sA0ovYjB0BFYP8AA2L2YwAQAzHzjQAZkfNPgABj8zODABAP9EHzngAScE
+BAAOZAIPJQntHzABAEI-MTgwAQD-----------8fPzE0MFQX--9NDwEA-2ovYzC7DUgPAQD----E
+9RsiKSxoaWRkZW49ZmFsc2UsbmFtZT0ib2JqZWN0cyIscGFuX3g9OTMuNTYBABE3FgCGeT02OS41
+MTYWAIJ0aWxlX2g9OAkAz3c9OCx6b29tPTJ9LGAgfhA1BAAWMQQALzQ5BABXDgEADwABbyY1MaAA
+D-AAwQ8BAAEmNDikAA8EAB0PNAEJD-AAqS81MQQAAC8yMEQACg-wAKYvYTAoAyMPBAAAPzVhMNQD
+di80OfAAJw8BAAEiNDlYAA8QAgEvMDD4AHcvNTGoADEO4AAPAQD--6ciNDCcBA8BANUE8AUPcAFt
+AQQAHzLwANADgAAOXAYP8AD-4An8Ag4EAA8UAxIO8AAPqANQCAQAHznwAA8FPAAfOQQAAy41MYAI
+D0QADS8zZQQAAwUoAB8yQAABDwQAGB85BAABD-AAFAgEAgzsAA8oCRQNRAAfMQQABA6MAA6EAA8E
+ADUWYWgBCXQBHzgwAAcMAQAvM2UEAAEPsAAgHmHQCi80OQQAQB8xBAAAHznwABcPeAIGHznwACsu
+MDA0AQ8EAF4OlAAPiAEED-AAxw6YAA9MAYAP8AA8LzUwTAFjJjUxBAAvNDkEAEQfMuQBBQ9MAUcE
+1AAOCAcPKAAND4gBTyY1MQQALzQ5WAAaDwEAQgwIAS80OQQAAQ_ABx8vNTB0AQMvNDnwAGsIAQAv
+M2aIAhwAsAcvNjABABovNTDwABYPAQC2LzQ44AF3LzUw4AFLLzAwRAIYHjJgAA-UAm4eMaQFD-AA
+Dw9QAUsN6AkfMvAAOAQEAA9cABAFhAAfOUACTBcwRAAEBAAOnAAOLAAPBAAlHzEEAAQfOQQAIC8y
+MOwALwgEABsxBAAfOQQAgB8xBAAYHzkEAP9yD2AgA29ncm91bmRfIFEPAQD-----------------
+ez82YzABAMI-NmQwAQD----------------------4EPXyADRGRlY29dIFMtMTUuNlMgby0yOC4x
+NUogBR8xSiD------------RHze_TtxvNmEwMDcw8ADbD-QAFR83zAKwJjZhBAAPAQALDiQAD9wB
+pQ-kARUAJAAP3AHVIjAwKAAvNzABANciNmEEAA-wAN0vNzABAP------OABMBQ8gAAoSOSQADigA
+D-AApAfQACI2YggADAEAIzYzIAAABAAPTWm0DtAAD_QBxwg4Cg8BAAMPIAAPDtU9D3k9Fg8BAF4v
+NmEYCQ8E8AIPOAmxJzZhBAAfMzgMDg-wALsP5AEABBgAD7gDuSc2YgwAC9wADBAADwEApS42YZgF
+BIwFLzcwAQDDANwAD0og-6ZPYmFja61ANlBtPTJ9fQ==
 :: sfx/
 :: sfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
-OC0wNCAxOTowMjozMiIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
+OC0wNSAwMDo0OTo0MiIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
 MG5pbA==
 :: sfx/0.sfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
-OC0wNCAxOTowMjozMSIscmV2aXNpb249MjU3XV1sejQALAIAAM4IAAD-EHB4dQADKAAABAAED0AQ
+OC0wNSAwMDo0OTo0MSIscmV2aXNpb249Mjk4XV1sejQAPgUAABUMAAD-EHB4dQADKAAABAAED0AQ
 Ag4AAaABIAKgDgAPEAAN8P8BAOz-O8oBEAYPIBABIAEgAfAAAhACDBABIA8hIAEwDvDDDygP--DG
 D-gKD-8PgA-3Dw0BcA9wDzgMD3QPcg9pD2EPbg9nD2wPZVABEAYMRAABbw9yIALwv0cACPsCaQ9s
 D3QPZQ9kDA9zD2EPdzBKABUNSgAfgI8ACAE7AB_gOwAGH8A7AAqvcQ91D2EPcg9lcEEABh-ZxgAK
@@ -123,9 +125,23 @@ IAEP4CCnAAlQcA9oD2FPAC8PckQD3vwe5w4AAkAPTg87D0cPNQ9CDy8PPw8rDzsPKQ82DyYPMg8k
 Dy4MDyoPHf--HgMEAgDxCvkeLylPKh8pLygPKQ8oDycPJQwPG-kd8HBVAPABKQ8rDzIPPPksMPks
 PzH5LBcAqQNADyUPKA8uDzoXAPM5AkAPHgwLDyMPOg9CD1QfUw9RD04PSg9FDg88DzkPNQ8yDy4P
 KQ8mDyMPHw8dDxv5F1T2A-kXDxcvFg8eDyYPLA8vDy4PKw8qhwDwBiQPIwwPHg8cDxkPFg8TDw4K
-Dwf5F2gATw1A_bAIAP-HH-8BAP_ZUP----8g
+Dwf5F2gA8iwEQA8nDzYPKg86Dy8PPg8zD0QPOQ9JDz8PTg9DD1IPSA9WD035H-AB_R_fLA8rDykP
+JQsPHg8aDxT5H74A8RY7DA8fDx4PHfkofwf5KA88DzsPNw8wDysPJw8cDw75KGAPPvBo5wDxFTwP
+Jg9FDy4PTA84D1MOD1UPRw4PNQ8oDxv5ItH5Ih8uDy0PLLMA4yULDxoPEQ8JCA8HBvkiDgHyFCgP
+Kg8sDy4PMg84Dz4fSvkngfknDQ8RHxMPFA8XDx0fH-knkQBSBw8iDyZSAUIfRx9EBADyEfkg8AD5
+IB88LzoPOw86DzcPMw8wDywPJwsPFg8NCPkgOwD1CQ8dB19X_SgQVvkoDxgMCwwPHA8YDxYPFcYA
+bg1A_bDwcAgAwQRADyQPNA8oDzsPMUIBpU8OD1MPRA9WD0kEAB5XBADxCPkV-wUL_RUPLw8zbzkf
+OA81DzAPKA8lYQHjGQ8UDxINDw8vDh8N_RVlAPQYRw9FDz4PNR8tDzEPNA8v_SePB-knDyYPKg8u
+Dy8PLQ8oDyMPGw8XCwHwFQsPJg8eDyIPJQ8dDykHDyQPHAsPKQwPJfki1vki3Pki3z7wYsUAAbIB
+5j-5LSP5LS8t_S0vPvBt3AAPCAAVYgZADzB-TZMA-gAvMg8sDyQHDxsPFg8R_ScvAA8IAEmBPyQ-
+Jx8wHyuGAvgDLg81Xzr5GvMG_RoPKg8nDyMHBwBAKg8nHwgAcC8PNQ80DzESAkAPHPkaSAAgDwyy
+Aj9DD0gGABH4DPkb8gX5Gy82LzEvKy8jLxwvFC8M_Rv-PgXwW5oADwgAQ3APBUAPGw8d4AG-Kw8z
+DzwPSA8-D0YIABmV_RBfBxMfBRMVAgBA_RAMD1kCkSsPMx82DzcfNiEB0TIfMx8yDzEPMA8vHyxB
+ARAlWAQTHVYEjw-5EABPcwAKAgAFLvBQvQAQA30CXEMPOg9BCAAi_SSMACD5JF8E8AUPHA8aDxsP
+Gg8YDxcPFh8UDxH5JEAA-hYPC0APQQkBL0j5KgMJM-kqDzEJDyQPNw8vDyP5Kg8_AAgQCPBqdwAP
+CAAaH-8BAP_ZUP----8g
 :: draw.lua
---[[pod_format="raw",created="2024-07-29 19:55:38",modified="2024-08-04 19:02:31",revision=358]]
+--[[pod_format="raw",created="2024-07-29 19:55:38",modified="2024-08-05 00:49:41",revision=397]]
 -- [draw loop]
 
 function _draw()
@@ -185,8 +201,7 @@ function _draw()
 	camera(draw_x, draw_y)
 	
 	-- draw bg terrain
-	--map(lvl_x, lvl_y, 0, 0, lvl_w, lvl_h)
-	draw_layer(4, lvl_x, lvl_y, 0, 0, lvl_w, lvl_h) -- background
+	draw_layer(4, lvl_x, lvl_y, 0, 0, lvl_w, lvl_h) -- background walls
 	draw_layer(3, lvl_x, lvl_y, 0, 0, lvl_w, lvl_h) -- deco
 	
 	-- set draw layering
@@ -287,7 +302,7 @@ function draw_ui()
 	draw_time(4, 4)
 end
 :: initialization.lua
---[[pod_format="raw",created="2024-07-29 19:52:34",modified="2024-08-04 19:02:31",revision=323]]
+--[[pod_format="raw",created="2024-07-29 19:52:34",modified="2024-08-05 00:49:41",revision=361]]
 -- [initialization]
 
 function vector(x, y)
@@ -296,10 +311,6 @@ end
 
 function rectangle(x, y, w, h)
 	return {x = x, y = y, w = w, h = h}
-end
-
-function params(n)
-	return unpack(split(n))
 end
 
 -- global tables
@@ -1472,7 +1483,7 @@ fa-1LokjiRzpXII9nYF3BzqOfUT33a29_WboqgQG6EdnR89XwJ0BzAMUn4FrUDtpx9edAkXrvXWu
 f0x6N8Q6ebd5gubCde6g7vFD5P8HJ8CrmS6g1gAAAAAQdEVYdExvZGVQTkcAMjAxMTAyMjHjWbbB
 AAAAAElFTkSuQmCC
 :: levels.lua
---[[pod_format="raw",created="2024-07-29 20:11:31",modified="2024-08-04 19:02:31",revision=279]]
+--[[pod_format="raw",created="2024-07-29 20:11:31",modified="2024-08-05 00:49:41",revision=332]]
 -- [level loading]
 
 function next_level()
@@ -1511,23 +1522,14 @@ function load_level(id)
 	-- level title setup
 	ui_timer = 5
 
-	-- reload map
-	--[[
-	if diff_level then
-		reload()
-		--	check for mapdata strings
-		if mapdata[lvl_id] then
-			replace_mapdata(lvl_x, lvl_y, lvl_w, lvl_h, mapdata[lvl_id])
-		end
-	end
-	--]]
-
-	-- entities
+	-- spawn objects
 	for tx = 0, lvl_w - 1 do
 		for ty = 0, lvl_h - 1 do
 			local tile = tile_at(tx, ty)
-			if tiles[tile] then
-				init_object(tiles[tile], tx * 8, ty * 8, tile)
+			local object_type = tiles[tile] or tiles[tile - 0x4000]
+			-- horizontally mirrored map tiles have the 15th bit flipped (aka 0x4000)
+			if object_type then
+				init_object(object_type, tx * 8, ty * 8, tile)
 			end
 		end
 	end
@@ -1540,12 +1542,29 @@ function replace_mapdata(x, y, w, h, data)
 	end
 end
 :: main.lua
---[[pod_format="raw",created="2024-03-24 00:48:06",modified="2024-08-04 19:02:31",revision=349]]
+--[[pod_format="raw",created="2024-03-24 00:48:06",modified="2024-08-05 00:49:41",revision=398]]
 -- E V E R T R O N --
 -- equinox's port of evercore to picotron
 
 -- based on evercore+ v2.0.1, which is based on evercore v2.3.0, which is based on smalleste, which is based on celeste classic
 
+--[[ Credits
+	Celeste Classic
+		Maddy Thorson
+		Noel Berry
+	Evercore
+		petra
+		meep
+		gonengazit
+		akliant
+	Evercore+ and Evertron
+		equinox
+	PICO-8 Instruments
+		pancelor
+--]]
+
+-- vid(0) should be supported if you really want more pixels (but I think it looks bad.)
+-- vid(4) works except for the title screen.
 vid(3)
 game_w, game_h = get_display():width(), get_display():height()
 
@@ -1560,25 +1579,27 @@ include "metadata.lua"
 -- todo
 --[[
 		fix btn calls
-	probably delete the "reload map" part in levels.lua
+		probably delete the "reload map" part in levels.lua
 		make objects actually spawn
-	make all objects actually spawn
+		make all objects actually spawn
 		multiple map layer support
 		make the "calculate dash speeds" line comprehensible
 		make object dictionary comprehensible
 		clamp player not in the draw function
-	generally token de-optimize bc infinite tokens
 	use vec over vector
 		stop using psfx
-	stop using params
+		stop using params
 		better object layering?
 	make jumpthroughs draw
 	make memorials type
+	make the noise instrument not sound bad
+	recreate music
+	figure out how multiple levels work (different .map for each one?)
 		make the "100m" thing centered
-	60fps?
+	60fps? smoothleste? maybe in a different branch
 --]]
 :: metadata.lua
---[[pod_format="raw",created="2024-07-29 20:13:01",modified="2024-08-04 19:02:31",revision=365]]
+--[[pod_format="raw",created="2024-07-29 20:13:01",modified="2024-08-05 00:49:41",revision=417]]
 -- [metadata]
 
 -- level table
@@ -1622,20 +1643,19 @@ end)
 
 tiles = {
 	[1] = player_spawn,
-	[8] = spring, -- right
-	[9] = spring, -- up
-	[0x4008] = spring, -- left
+	[8] = spring, -- right-facing (make a left-facing one by flipping the map tile)
+	[9] = spring, -- up-facing
 	[11] = chest,
 	[12] = message,
 	[13] = big_chest,
 	[14] = fake_wall,
-	--[15] = platform,
-	--[16] = flag,
+	[15] = platform,
+	[16] = flag,
 	[19] = balloon,
 	[20] = fruit,
 	[24] = berry_key,
 	[32] = fall_floor,
-	--[40] = fly_fruit,
+	[40] = fly_fruit,
 }
 
 -- copy mapdata string to clipboard
@@ -1652,7 +1672,7 @@ function num2hex(v)
 	return sub(tostr(v, true), 5, 6)
 end
 :: objects.lua
---[[pod_format="raw",created="2024-07-29 20:10:42",modified="2024-08-04 19:02:31",revision=338]]
+--[[pod_format="raw",created="2024-07-29 20:10:42",modified="2024-08-05 00:49:41",revision=404]]
 -- [objects]
 
 spring = {
@@ -1750,7 +1770,7 @@ function set_springs(obj, state)
 	obj.hitbox = rectangle(-2, -2, 12, 8)
 	local springs = obj.check_all(spring, 0, 0)
 	foreach(springs, function(s) s.show = state end)
-	obj.hitbox = rectangle(params"0, 0, 8, 8")
+	obj.hitbox = rectangle(0, 0, 8, 8)
 end
 
 balloon = {}
@@ -1758,7 +1778,7 @@ function balloon:init()
 	self.offset = rnd()
 	self.start = self.y
 	self.timer = 0
-	self.hitbox = rectangle(params"-1, -1, 10, 10")
+	self.hitbox = rectangle(-1, -1, 10, 10)
 	self.show = true
 end
 function balloon:update()
@@ -1849,9 +1869,9 @@ function fly_fruit:update()
 	check_fruit(self)
 end
 function fly_fruit:draw()
-	spr(28, self.x, self.y)
+	spr(20, self.x, self.y)
 	for ox = -6, 6, 12 do
-		spr((has_dashed or sin(self.step) >= 0) and 29 or self.y > self.start and 31 or 30, self.x + ox, self.y - 2, 1, 1, ox == -6)
+		spr((has_dashed or sin(self.step) >= 0) and 40 or self.y > self.start and 42 or 41, self.x + ox, self.y - 2, ox == -6)
 	end
 end
 
@@ -1956,7 +1976,7 @@ platform = {
 function platform:init()
 	self.x -= 4
 	self.hitbox.w = 16
-	self.dir = self.spr == 11 and -1 or 1
+	self.dir = self.spr == 0x400f and -1 or 1
 	self.semisolid_obj = true
 end
 function platform:update()
@@ -1969,7 +1989,7 @@ function platform:update()
 	end
 end
 function platform:draw()
-	spr(11, self.x, self.y - 1, 2, 1)
+	spr(15, self.x, self.y - 1)
 end
 
 message = {
@@ -2080,14 +2100,14 @@ function flag:update()
 	end
 end
 function flag:draw()
-	spr(118 + frames / 5 % 3, self.x, self.y)
+	spr(16 + frames / 5 % 3, self.x, self.y)
 	if self.show then
 		camera()
-		rectfill(params"32, 2, 96, 31, 0")
-		spr(28, 55, 6)
-		?"x" .. fruit_count, 64, 9, 7
-		draw_time(49, 16)
-		?"deaths:" .. deaths, 48, 24, 7
+		rectfill(game_w / 2 - 32, 2, game_w / 2 + 32, 31, 0)
+		spr(20, game_w / 2 - 9, 6)
+		?"x" .. fruit_count, game_w / 2, 9, 7
+		draw_time(game_w / 2 - 15, 16)
+		?"deaths:" .. deaths, game_w / 2 - 16, 24, 7
 		camera(draw_x, draw_y)
 	end
 end
@@ -2108,7 +2128,7 @@ function init_object(type, x, y, tile)
 		flip = vector(), -- false, false
 		x = x,
 		y = y,
-		hitbox = rectangle(params"0, 0, 8, 8"),
+		hitbox = rectangle(0, 0, 8, 8),
 		spd = vector(0, 0),
 		rem = vector(0, 0),
 		layer = 0,
@@ -2289,7 +2309,7 @@ function draw_object(obj)
 	obj:draw()
 end
 :: player.lua
---[[pod_format="raw",created="2024-07-29 19:55:57",modified="2024-08-04 19:02:31",revision=279]]
+--[[pod_format="raw",created="2024-07-29 19:55:57",modified="2024-08-05 00:49:41",revision=316]]
 -- [player class]
 
 player = {
@@ -2303,7 +2323,7 @@ function player:init()
 	self.dash_time, self.dash_effect_time = 0, 0
 	self.dash_target_x, self.dash_target_y = 0, 0
 	self.dash_accel_x, self.dash_accel_y = 0, 0
-	self.hitbox = rectangle(params"1, 3, 6, 5")
+	self.hitbox = rectangle(1, 3, 6, 5)
 	self.spr_off = 0
 end
 function player:update()
@@ -2564,7 +2584,7 @@ function player_spawn:update()
 	end
 end
 :: update.lua
---[[pod_format="raw",created="2024-07-29 19:55:07",modified="2024-08-04 19:02:31",revision=276]]
+--[[pod_format="raw",created="2024-07-29 19:55:07",modified="2024-08-05 00:49:41",revision=317]]
 -- [update loop]
 
 function _update()
@@ -2640,15 +2660,15 @@ function _update()
 end
 :: .info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTA3LTI5IDE5OjUxOjUwIixtb2RpZmllZD0iMjAyNC0w
-OC0wNCAxOTowMjozMiIscnVudGltZT04LHN0b3JlZD0iMjAyNC0wMy0yNCAwMDo0ODoyNiIsd29y
-a3NwYWNlcz17e2xvY2F0aW9uPSJtYWluLmx1YSMzNSIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2Nh
-dGlvbj0iaW5pdGlhbGl6YXRpb24ubHVhIzE4Iix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0aW9u
-PSJ1cGRhdGUubHVhIzIxIix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0aW9uPSJkcmF3Lmx1YSMx
-NTgiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249InBsYXllci5sdWEjMiIsd29ya3NwYWNl
-X2luZGV4PTF9LHtsb2NhdGlvbj0ib2JqZWN0cy5sdWEjMzc2Iix3b3Jrc3BhY2VfaW5kZXg9MX0s
-e2xvY2F0aW9uPSJsZXZlbHMubHVhIzQ4Iix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0aW9uPSJt
-ZXRhZGF0YS5sdWEjNDkiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249ImdmeC8wLmdmeCIs
-d29ya3NwYWNlX2luZGV4PTJ9LHtsb2NhdGlvbj0ibWFwLzAubWFwIix3b3Jrc3BhY2VfaW5kZXg9
-M30se2xvY2F0aW9uPSJzZngvMC5zZngiLHdvcmtzcGFjZV9pbmRleD00fX1dXWx6NAAEAAAAAwAA
-ADBuaWw=
+OC0wNSAwMDo0OTo0MiIscnVudGltZT04LHN0b3JlZD0iMjAyNC0wMy0yNCAwMDo0ODoyNiIsd29y
+a3NwYWNlcz17e2xvY2F0aW9uPSJtYWluLmx1YSM1NCIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2Nh
+dGlvbj0iaW5pdGlhbGl6YXRpb24ubHVhIzkiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249
+InVwZGF0ZS5sdWEjNSIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2NhdGlvbj0iZHJhdy5sdWEjOCIs
+d29ya3NwYWNlX2luZGV4PTF9LHtsb2NhdGlvbj0icGxheWVyLmx1YSMxNCIsd29ya3NwYWNlX2lu
+ZGV4PTF9LHtsb2NhdGlvbj0ib2JqZWN0cy5sdWEjMTA2Iix3b3Jrc3BhY2VfaW5kZXg9MX0se2xv
+Y2F0aW9uPSJsZXZlbHMubHVhIzQ2Iix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0aW9uPSJtZXRh
+ZGF0YS5sdWEjNDUiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249ImdmeC8wLmdmeCIsd29y
+a3NwYWNlX2luZGV4PTJ9LHtsb2NhdGlvbj0ibWFwLzAubWFwIix3b3Jrc3BhY2VfaW5kZXg9M30s
+e2xvY2F0aW9uPSJzZngvMC5zZngiLHdvcmtzcGFjZV9pbmRleD00fX1dXWx6NAAEAAAAAwAAADBu
+aWw=
 :: [eoc]
