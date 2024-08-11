@@ -27,11 +27,7 @@ function load_level(id)
 	lvl_id = id
 
 	-- set level globals
-	local lvl_data = split(levels[lvl_id])
-	for i = 1, 4 do
-		lvl_x, lvl_y, lvl_w, lvl_h = unpack(lvl_data)
-	end
-	lvl_title = lvl_data[5]
+	lvl_x, lvl_y, lvl_w, lvl_h, lvl_title = unpack(levels[lvl_id])
 	lvl_pw, lvl_ph = lvl_w * 8, lvl_h * 8
 
 	-- level title setup
@@ -48,6 +44,17 @@ function load_level(id)
 			end
 		end
 	end
+end
+
+-- copy mapdata string to clipboard
+-- TODO: this is a bit broken -- flipped tiles will lose their flip data
+function get_mapdata(x, y, w, h)
+	local reserve = ""
+	for i = 0, w * h - 1 do
+		local tile = mget(x + i % w, y + i \ w)&0xff --16 bits, but ignore the upper 8 (flip data)
+		reserve ..= string.format("%02x",tile)
+	end
+	set_clipboard(reserve)
 end
 
 -- replace mapdata with hex

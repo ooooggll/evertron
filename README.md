@@ -12,9 +12,10 @@ Based on evercore+ v2.0.1, which is based on evercore v2.3.0, which is based on 
 - meep
 - gonengazit
 - akliant
-### Evercore+ and Evertron
+### Evercore+
 - equinox
-### PICO-8 Instruments
+### Evertron
+- equinox
 - pancelor
 
 ## Documentation (barely)

@@ -13,16 +13,17 @@
 		meep
 		gonengazit
 		akliant
-	Evercore+ and Evertron
+	Evercore+
 		equinox
-	PICO-8 Instruments
+	Evertron
+		equinox
 		pancelor
 --]]
 
 -- vid(0) should be supported if you really want more pixels (but I think it looks bad.)
 -- vid(4) works except for the title screen.
 vid(3)
-game_w, game_h = get_display():width(), get_display():height()
+game_w, game_h = get_display():attribs()
 
 include "initialization.lua"
 include "update.lua"

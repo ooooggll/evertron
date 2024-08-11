@@ -112,7 +112,6 @@ end
 
 -- pass in "lil", "lil_mono", or "p8"
 function set_font(font)
-	poke(0x4000, get(fetch("/system/fonts/" .. font .. ".font")))
+	fetch("/system/fonts/" .. font .. ".font"):poke(0x4000)
 	game_font = font
-	--poke(0x4000, get(fetch"/system/fonts/p8.font")
 end
