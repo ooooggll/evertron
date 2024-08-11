@@ -2,11 +2,13 @@
 -- [draw loop]
 
 function _draw()
+	-- Skip every other frame for 30fps
+	if (picotron_frames % 2 == 0) return
+
+	-- freeze frames
 	if freeze > 0 then
 		return
 	end
-	
-	if (actual_frames % 2 == 0) return
 
 	-- reset all palette values
 	pal()

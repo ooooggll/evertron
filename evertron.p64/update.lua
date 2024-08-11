@@ -3,8 +3,9 @@
 
 
 function _update()
-	actual_frames += 1
-	if (actual_frames % 2 == 0) return
+	-- Skip every other frame for 30fps
+	picotron_frames += 1
+	if (picotron_frames % 2 == 0) return
 	
 	frames += 1
 	

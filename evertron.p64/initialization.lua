@@ -1,24 +1,27 @@
 --[[pod_format="raw",created="2024-07-29 19:52:34",modified="2024-08-11 10:30:55",revision=401]]
 -- [initialization]
 
-function rectangle(x, y, w, h)
-	return {x = x, y = y, w = w, h = h}
-end
-
 -- global tables
-objects, got_fruit = {}, {}
+objects = {}
+got_fruit = {}
 -- global timers
-freeze, delay_restart, music_timer, ui_timer = 0, 0, 0, -99
+freeze = 0
+delay_restart = 0
+music_timer = 0
+ui_timer = -99
 -- global camera values
-draw_x, draw_y, cam_x, cam_y, cam_spdx, cam_spdy, cam_gain = 0, 0, 0, 0, 0, 0, 0.25
+draw_x, draw_y, cam_x, cam_y, cam_spdx, cam_spdy = 0, 0, 0, 0, 0, 0
+cam_gain = 0.25
 
 game_map = fetch("map/0.map")
 
 -- [entry point]
 
 function _init()
-	actual_frames = 0
-	frames, start_game_flash = 0, 0
+	picotron_frames = 0
+	frames = 0
+	start_game_flash = 0
+
 	music(40, 0, 7)
 	lvl_id = 0
 	
@@ -27,7 +30,13 @@ end
 
 function begin_game()
 	max_djump = 1
-	deaths, frames, seconds, minutes, music_timer, time_ticking, fruit_count, bg_col, cloud_col = 0, 0, 0, 0, 0, true, 0, 0, 1
+	deaths = 0
+	frames, seconds, minutes = 0, 0, 0
+	music_timer = 0
+	time_ticking = true
+	fruit_count = 0
+	bg_col, cloud_col = 0, 1
+	
 	music(0, 0, 7)
 	load_level(1)
 end
@@ -62,6 +71,10 @@ end
 dead_particles = {}
 
 -- [function library]
+
+function rectangle(x, y, w, h)
+	return {x = x, y = y, w = w, h = h}
+end
 
 function round(x)
 	return flr(x + 0.5)

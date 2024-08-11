@@ -327,31 +327,31 @@ function message:init()
 	self.hitbox.y += 8
 end
 function message:draw()
-	if self.check(player,4,0) then
-		if self.index<#self.text then
-			self.index+=0.5
-			if self.index>=self.last+1 then
-				self.last+=1
+	if self.check(player, 4, 0) then
+		if self.index < #self.text then
+			self.index += 0.5
+			if self.index >= self.last + 1 then
+				self.last += 1
 				sfx(35)
 			end
 		end
-		local _x,_y=game_w / 2 - 56,game_h-32
-		local _x0=_x
+		local _x, _y = game_w / 2 - 56, game_h - 32
+		local _x0 = _x
 		camera()
-		for i=1,self.index do
-			if sub(self.text,i,i)~="#" then
-				rectfill(_x-2,_y-2,_x+7,_y+6,7)
-				?sub(self.text,i,i),_x,_y,0
-				_x+=5
+		for i = 1, self.index do
+			if sub(self.text, i, i) ~= "#" then
+				rectfill(_x - 2, _y - 2, _x + 7, _y + 6, 7)
+				?sub(self.text, i, i), _x, _y, 0
+				_x += 5
 			else
-				_x=_x0
-				_y+=7
+				_x = _x0
+				_y += 7
 			end
 		end
 		camera(draw_x, draw_y)
 	else
-		self.index=0
-		self.last=0
+		self.index = 0
+		self.last = 0
 	end
 end
 function message:draw_below()
