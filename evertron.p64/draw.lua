@@ -1,4 +1,4 @@
---[[pod_format="raw",created="2024-07-29 19:55:38",modified="2024-08-11 10:30:55",revision=448]]
+--[[pod_format="raw",created="2024-07-29 19:55:38",modified="2024-08-11 18:18:49",revision=454]]
 -- [draw loop]
 
 function _draw()
@@ -131,8 +131,6 @@ function _draw()
 		end
 		ui_timer -= 1
 	end
-	
-	?stat(7), 2, 2, 7
 end
 
 function draw_particle(p)
