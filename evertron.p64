@@ -4,11 +4,11 @@ version 2
 :: gfx/
 :: gfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
-OC0wNSAxNjo0MToyOCIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
+OC0xMSAxNzozMjo0NyIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
 MG5pbA==
 :: gfx/0.gfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
-OC0wNSAxNjo0MToyOCIscmV2aXNpb249NDU2XV1sejQAKg4AAHxEAADzFHtbMF09e2JtcD1weHUA
+OC0xMSAxNzozMjo0NyIscmV2aXNpb249NDY3XV1sejQAKg4AAHxEAADzFHtbMF09e2JtcD1weHUA
 QyAICATwMCxmbGFncz0wLHBhbl94CADKeT0wLHpvb209OH0sMQD-B4BYAKg-DygOAR4BCAAITiAz
 MAcQBxBFAC8-IAcARQAcHABFAF8gBzAHgIoAK08QBzNgzgAf-wlIEGgACD8PGAAIAR4BDggQTggg
 MwdAByBIABwi8AGNAEBOCAAIkQBfEBcjBwDQAB_BGA8PAR4BKE5IAC8zCKIBI8OwBDAFAAUJIAUA
@@ -83,11 +83,11 @@ Hb8cLx3-HCibABwv8PAxAP------------------------------------------------------
 :: map/
 :: map/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
-OC0wNSAxNjo0MToyOCIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
+OC0xMSAxNzozMjo0NyIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
 MG5pbA==
 :: map/0.map
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
-OC0wNSAxNjo0MToyOCIscmV2aXNpb249NDA3XV1sejQA0wQAAHGBAAD-Dnt7Ym1wPXVzZXJkYXRh
+OC0xMSAxNzozMjo0NyIscmV2aXNpb249NDE4XV1sejQA0wQAAHGBAAD-Dnt7Ym1wPXVzZXJkYXRh
 KCJpMTYiLDYwLDM0LCIwAQD--zA-MTMwAQCHL2QwAQCzL2Uw6AL--w0FAQCPNDAwODAwMjABAP-k
 PzI4MAEAry85MAEA2g_sAw4vZjABACcvYjB0BFYPAQATD5wEWB840AGED0QBAw-oAQY-MzgwAQD-
 RB854AEnBAQADmQCDyUJ7R8wAQBCPzE4MAEA------------Hz8xNDBUF---TQ8BAP9qL2Mwuw1I
@@ -113,11 +113,11 @@ N1ogZjY5LjUxNhYAD2MgAlBtPTJ9fQ==
 :: sfx/
 :: sfx/.info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
-OC0wNSAxNjo0MToyOCIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
+OC0xMSAxNzozMjo0NyIsc3RvcmVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Il1dbHo0AAQAAAADAAAA
 MG5pbA==
 :: sfx/0.sfx
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTAzLTI0IDAwOjQ4OjA2Iixtb2RpZmllZD0iMjAyNC0w
-OC0wNSAxNjo0MToyOCIscmV2aXNpb249MzI1XV1sejQAPgUAABUMAAD-EHB4dQADKAAABAAED0AQ
+OC0xMSAxNzozMjo0NyIscmV2aXNpb249MzM2XV1sejQAPgUAABUMAAD-EHB4dQADKAAABAAED0AQ
 Ag4AAaABIAKgDgAPEAAN8P8BAOz-O8oBEAYPIBABIAEgAfAAAhACDBABIA8hIAEwDvDDDygP--DG
 D-gKD-8PgA-3Dw0BcA9wDzgMD3QPcg9pD2EPbg9nD2wPZVABEAYMRAABbw9yIALwv0cACPsCaQ9s
 D3QPZQ9kDA9zD2EPdzBKABUNSgAfgI8ACAE7AB_gOwAGH8A7AAqvcQ91D2EPcg9lcEEABh-ZxgAK
@@ -143,15 +143,16 @@ ARAlWAQTHVYEjw-5EABPcwAKAgAFLvBQvQAQA30CXEMPOg9BCAAi_SSMACD5JF8E8AUPHA8aDxsP
 Gg8YDxcPFh8UDxH5JEAA-hYPC0APQQkBL0j5KgMJM-kqDzEJDyQPNw8vDyP5Kg8_AAgQCPBqdwAP
 CAAaH-8BAP_ZUP----8g
 :: draw.lua
---[[pod_format="raw",created="2024-07-29 19:55:38",modified="2024-08-05 16:41:28",revision=439]]
+--[[pod_format="raw",created="2024-07-29 19:55:38",modified="2024-08-11 17:32:47",revision=454]]
 -- [draw loop]
 
 function _draw()
+	-- run at 30fps
+	if (picotron_frames % 2 == 0) return
+	
 	if freeze > 0 then
 		return
 	end
-	
-	if (actual_frames % 2 == 0) return
 
 	-- reset all palette values
 	pal()
@@ -306,7 +307,7 @@ function draw_ui()
 	draw_time(4, 4)
 end
 :: initialization.lua
---[[pod_format="raw",created="2024-07-29 19:52:34",modified="2024-08-05 16:41:28",revision=392]]
+--[[pod_format="raw",created="2024-07-29 19:52:34",modified="2024-08-11 17:32:47",revision=413]]
 -- [initialization]
 
 function rectangle(x, y, w, h)
@@ -314,19 +315,25 @@ function rectangle(x, y, w, h)
 end
 
 -- global tables
-objects, got_fruit = {}, {}
+objects = {}
+got_fruit = {}
 -- global timers
-freeze, delay_restart, music_timer, ui_timer = 0, 0, 0, -99
+freeze = 0
+delay_restart = 0
+music_timer = 0
+ui_timer = -99
 -- global camera values
-draw_x, draw_y, cam_x, cam_y, cam_spdx, cam_spdy, cam_gain = 0, 0, 0, 0, 0, 0, 0.25
+draw_x, draw_y, cam_x, cam_y, cam_spdx, cam_spdy = 0, 0, 0, 0, 0, 0
+cam_gain = 0.25
 
 game_map = fetch("map/0.map")
 
 -- [entry point]
 
 function _init()
-	actual_frames = 0
-	frames, start_game_flash = 0, 0
+	picotron_frames = 0
+	frames = 0
+	start_game_flash = 0
 	music(40, 0, 7)
 	lvl_id = 0
 	
@@ -1483,7 +1490,7 @@ fa-1LokjiRzpXII9nYF3BzqOfUT33a29_WboqgQG6EdnR89XwJ0BzAMUn4FrUDtpx9edAkXrvXWu
 f0x6N8Q6ebd5gubCde6g7vFD5P8HJ8CrmS6g1gAAAAAQdEVYdExvZGVQTkcAMjAxMTAyMjHjWbbB
 AAAAAElFTkSuQmCC
 :: levels.lua
---[[pod_format="raw",created="2024-07-29 20:11:31",modified="2024-08-05 16:41:28",revision=361]]
+--[[pod_format="raw",created="2024-07-29 20:11:31",modified="2024-08-11 17:32:47",revision=376]]
 -- [level loading]
 
 function next_level()
@@ -1542,7 +1549,7 @@ function replace_mapdata(x, y, w, h, data)
 	end
 end
 :: main.lua
---[[pod_format="raw",created="2024-03-24 00:48:06",modified="2024-08-05 16:41:28",revision=431]]
+--[[pod_format="raw",created="2024-03-24 00:48:06",modified="2024-08-11 17:32:47",revision=452]]
 -- E V E R T R O N --
 -- equinox's port of evercore to picotron
 
@@ -1597,9 +1604,10 @@ include "metadata.lua"
 	figure out how multiple levels work (different .map for each one?)
 		make the "100m" thing centered
 	60fps? smoothleste? maybe in a different branch
+	exit levels in any direction (optionally) (also optionally, re-enter levels by going back the way you came)
 --]]
 :: metadata.lua
---[[pod_format="raw",created="2024-07-29 20:13:01",modified="2024-08-05 16:41:28",revision=448]]
+--[[pod_format="raw",created="2024-07-29 20:13:01",modified="2024-08-11 17:32:47",revision=466]]
 -- [metadata]
 
 -- level table
@@ -1648,7 +1656,7 @@ function num2hex(v)
 	return sub(tostr(v, true), 5, 6)
 end
 :: objects.lua
---[[pod_format="raw",created="2024-07-29 20:10:42",modified="2024-08-05 16:41:28",revision=453]]
+--[[pod_format="raw",created="2024-07-29 20:10:42",modified="2024-08-11 17:32:47",revision=468]]
 -- [objects]
 
 spring = {
@@ -2285,7 +2293,7 @@ function draw_object(obj)
 	obj:draw()
 end
 :: player.lua
---[[pod_format="raw",created="2024-07-29 19:55:57",modified="2024-08-05 16:41:28",revision=346]]
+--[[pod_format="raw",created="2024-07-29 19:55:57",modified="2024-08-11 17:32:47",revision=361]]
 -- [player class]
 
 player = {
@@ -2560,12 +2568,13 @@ function player_spawn:update()
 	end
 end
 :: update.lua
---[[pod_format="raw",created="2024-07-29 19:55:07",modified="2024-08-05 16:41:28",revision=346]]
+--[[pod_format="raw",created="2024-07-29 19:55:07",modified="2024-08-11 17:32:47",revision=366]]
 -- [update loop]
 
 function _update()
-	actual_frames += 1
-	if (actual_frames % 2 == 0) return
+	-- skip every other frame for 30fps
+	picotron_frames += 1
+	if (picotron_frames % 2 == 0) return
 	
 	frames += 1
 	
@@ -2636,15 +2645,15 @@ function _update()
 end
 :: .info.pod
 b64$LS1bW3BvZCxjcmVhdGVkPSIyMDI0LTA3LTI5IDE5OjUxOjUwIixtb2RpZmllZD0iMjAyNC0w
-OC0wNSAxNjo0MToyOCIscnVudGltZT04LHN0b3JlZD0iMjAyNC0wMy0yNCAwMDo0ODoyNiIsd29y
-a3NwYWNlcz17e2xvY2F0aW9uPSJtYWluLmx1YSM0NCIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2Nh
-dGlvbj0iaW5pdGlhbGl6YXRpb24ubHVhIzIiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249
-InVwZGF0ZS5sdWEjNSIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2NhdGlvbj0iZHJhdy5sdWEjMTMy
-Iix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0aW9uPSJwbGF5ZXIubHVhIzY4Iix3b3Jrc3BhY2Vf
-aW5kZXg9MX0se2xvY2F0aW9uPSJvYmplY3RzLmx1YSM0NTUiLHdvcmtzcGFjZV9pbmRleD0xfSx7
-bG9jYXRpb249ImxldmVscy5sdWEjNDYiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249Im1l
-dGFkYXRhLmx1YSMxNyIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2NhdGlvbj0iZ2Z4LzAuZ2Z4Iix3
-b3Jrc3BhY2VfaW5kZXg9Mn0se2xvY2F0aW9uPSJtYXAvMC5tYXAiLHdvcmtzcGFjZV9pbmRleD0z
-fSx7bG9jYXRpb249InNmeC8wLnNmeCIsd29ya3NwYWNlX2luZGV4PTR9fV1dbHo0AAQAAAADAAAA
-MG5pbA==
+OC0xMSAxNzozMjo0NyIscnVudGltZT04LHN0b3JlZD0iMjAyNC0wMy0yNCAwMDo0ODoyNiIsd29y
+a3NwYWNlcz17e2xvY2F0aW9uPSJtYWluLmx1YSM1NiIsd29ya3NwYWNlX2luZGV4PTF9LHtsb2Nh
+dGlvbj0iaW5pdGlhbGl6YXRpb24ubHVhIzEzIix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0aW9u
+PSJ1cGRhdGUubHVhIzEiLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249ImRyYXcubHVhIzQi
+LHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249InBsYXllci5sdWEjNjgiLHdvcmtzcGFjZV9p
+bmRleD0xfSx7bG9jYXRpb249Im9iamVjdHMubHVhIzQ1NSIsd29ya3NwYWNlX2luZGV4PTF9LHts
+b2NhdGlvbj0ibGV2ZWxzLmx1YSMxIix3b3Jrc3BhY2VfaW5kZXg9MX0se2xvY2F0aW9uPSJtZXRh
+ZGF0YS5sdWEjMTciLHdvcmtzcGFjZV9pbmRleD0xfSx7bG9jYXRpb249ImdmeC8wLmdmeCIsd29y
+a3NwYWNlX2luZGV4PTJ9LHtsb2NhdGlvbj0ibWFwLzAubWFwIix3b3Jrc3BhY2VfaW5kZXg9M30s
+e2xvY2F0aW9uPSJzZngvMC5zZngiLHdvcmtzcGFjZV9pbmRleD00fX1dXWx6NAAEAAAAAwAAADBu
+aWw=
 :: [eoc]
