@@ -48,9 +48,9 @@ include "metadata.lua"
 		stop using params
 		better object layering?
 		make jumpthroughs draw
-	make memorials type
-	make the noise instrument not sound bad
-	recreate music
+		make memorials type
+		make the noise instrument not sound bad
+		recreate music
 	figure out how multiple levels work (different .map for each one?)
 		make the "100m" thing centered
 	60fps? smoothleste? maybe in a different branch

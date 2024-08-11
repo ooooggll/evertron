@@ -67,7 +67,7 @@ function _update()
 				begin_game()
 			end
 		elseif btn(4) or btn(5) then
-			music"-1"
+			music(-1)
 			start_game_flash, start_game = 50, true
 			sfx(38)
 		end
