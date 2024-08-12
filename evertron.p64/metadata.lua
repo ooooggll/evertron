@@ -1,17 +1,11 @@
---[[pod_format="raw",created="2024-07-29 20:13:01",modified="2024-08-11 10:30:55",revision=462]]
+--[[pod_format="raw",created="2024-07-29 20:13:01",modified="2024-08-12 08:08:16",revision=475]]
 -- [metadata]
 
 -- level table
--- {x, y, w, h, ?title}
+-- {path, ?title}
 levels = {
-	{0, 0, 60, 34},
-}
-
--- list of music switch triggers
--- assigned levels will start the tracks set here
-music_switches = {
-	[2] = 20,
-	[3] = 30,
+	{map="map/0.map"},
+	{map="map/1.map",title="summit",music=30},
 }
 
 -- tiles stack
