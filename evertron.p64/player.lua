@@ -1,4 +1,4 @@
---[[pod_format="raw",created="2024-07-29 19:55:57",modified="2024-08-11 10:30:55",revision=355]]
+--[[pod_format="raw",created="2024-07-29 19:55:57",modified="2024-08-12 08:08:16",revision=367]]
 -- [player class]
 
 player = {
@@ -169,8 +169,7 @@ function player:update()
 	btn(2) and 7 or -- look up
 	self.spd.x ~= 0 and h_input ~= 0 and 1 + self.spr_off % 4 or 1 -- walk or stand
 
-	-- exit level off the top (except summit)
-	if self.y < -4 and levels[lvl_id + 1] then
+	if should_exit_level(self.x,self.y) then
 		next_level()
 	end
 

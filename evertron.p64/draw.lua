@@ -1,8 +1,9 @@
---[[pod_format="raw",created="2024-07-29 19:55:38",modified="2024-08-11 18:18:49",revision=454]]
+--[[pod_format="raw",created="2024-07-29 19:55:38",modified="2024-08-12 08:08:16",revision=466]]
 -- [draw loop]
 
 function _draw()
 	-- Skip every other frame for 30fps
+	-- NOTE: btnp() will not work
 	if (picotron_frames % 2 == 0) return
 
 	-- freeze frames

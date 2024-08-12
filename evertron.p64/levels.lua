@@ -1,12 +1,19 @@
---[[pod_format="raw",created="2024-07-29 20:11:31",modified="2024-08-11 10:30:55",revision=370]]
+--[[pod_format="raw",created="2024-07-29 20:11:31",modified="2024-08-12 08:08:16",revision=382]]
 -- [level loading]
+
+local game_map
+
+function should_exit_level(x,y)
+	-- exit level off the top (except summit)
+	return y < -4 and levels[lvl_id + 1]
+end
 
 function next_level()
 	local next_lvl = lvl_id + 1
 
 	-- check for music trigger
-	if music_switches[next_lvl] then
-		music(music_switches[next_lvl], 500, 7)
+	if levels[next_lvl].music then
+		music(levels[next_lvl].music, 500, 7)
 	end
 
 	load_level(next_lvl)
@@ -27,7 +34,11 @@ function load_level(id)
 	lvl_id = id
 
 	-- set level globals
-	lvl_x, lvl_y, lvl_w, lvl_h, lvl_title = unpack(levels[lvl_id])
+	local level = levels[lvl_id]
+	lvl_title = level.title -- may be nil
+	game_map = fetch(level.map)
+
+	lvl_x, lvl_y, lvl_w, lvl_h = 0, 0, game_map[1].bmp:attribs()
 	lvl_pw, lvl_ph = lvl_w * 8, lvl_h * 8
 
 	-- level title setup
@@ -61,5 +72,27 @@ end
 function replace_mapdata(x, y, w, h, data)
 	for i = 1, #data, 2 do
 		mset(x + i \ 2 % w, y + i \ 2 \ w, "0x" .. sub(data, i, i + 1))
+	end
+end
+
+function tile_at(x, y, layer)
+--	return mget(lvl_x + x, lvl_y + y)
+	return game_map[layer or 1].bmp:get(x, y)
+end
+
+function draw_layer(layer, ...)
+	map(game_map[layer].bmp, ...)
+end
+
+function spikes_at(x1, y1, x2, y2, xspd, yspd)
+	for i = max(0, x1 \ 8), min(lvl_w - 1, x2 / 8) do
+		for j = max(0, y1 \ 8), min(lvl_h - 1, y2 / 8) do
+			if({[62] = y2 % 8 >= 6 and yspd >= 0,
+				[55] = y1 % 8 <= 2 and yspd <= 0,
+				[54] = x1 % 8 <= 2 and xspd <= 0,
+				[63] = x2 % 8 >= 6 and xspd >= 0})[tile_at(i, j, 2)] then
+					return true
+			end
+		end
 	end
 end

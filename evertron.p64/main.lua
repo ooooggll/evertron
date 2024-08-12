@@ -51,7 +51,7 @@ include "metadata.lua"
 		make memorials type
 		make the noise instrument not sound bad
 		recreate music
-	figure out how multiple levels work (different .map for each one?)
+		figure out how multiple levels work (different .map for each one?)
 		make the "100m" thing centered
 	60fps? smoothleste? maybe in a different branch
 --]]
