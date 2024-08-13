@@ -1,9 +1,9 @@
---[[pod_format="raw",created="2024-07-29 20:11:31",modified="2024-08-12 08:08:16",revision=382]]
+--[[pod_format="raw",created="2024-07-29 20:11:31",modified="2024-08-13 00:17:41",revision=421]]
 -- [level loading]
 
 local game_map
 
-function should_exit_level(x,y)
+function should_exit_level(x, y)
 	-- exit level off the top (except summit)
 	return y < -4 and levels[lvl_id + 1]
 end
@@ -13,7 +13,7 @@ function next_level()
 
 	-- check for music trigger
 	if levels[next_lvl].music then
-		music(levels[next_lvl].music, 500, 7)
+		music(levels[next_lvl].music, 100, 7)
 	end
 
 	load_level(next_lvl)

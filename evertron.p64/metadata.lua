@@ -1,11 +1,12 @@
---[[pod_format="raw",created="2024-07-29 20:13:01",modified="2024-08-12 08:08:16",revision=475]]
+--[[pod_format="raw",created="2024-07-29 20:13:01",modified="2024-08-13 00:17:41",revision=527]]
 -- [metadata]
 
 -- level table
 -- {path, ?title}
 levels = {
-	{map="map/0.map"},
-	{map="map/1.map",title="summit",music=30},
+	{map = "map/0.map"},
+	{map = "map/2.map", title = "evergreen foothills", music = 20},
+	{map = "map/1.map", title = "summit", music = 30},
 }
 
 -- tiles stack

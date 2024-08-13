@@ -1,4 +1,4 @@
---[[pod_format="raw",created="2024-07-29 20:10:42",modified="2024-08-11 10:30:55",revision=462]]
+--[[pod_format="raw",created="2024-07-29 20:10:42",modified="2024-08-13 00:17:41",revision=513]]
 -- [objects]
 
 spring = {
@@ -630,8 +630,13 @@ function destroy_object(obj)
 end
 
 function move_camera(obj)
-	cam_spdx = cam_gain * (4 + obj.x - cam_x)
-	cam_spdy = cam_gain * (4 + obj.y - cam_y)
+	-- don't target camera directly on the player,
+	-- only follow if the player gets too far from the center
+	local target_x = appr(obj.x + 4, cam_x, 16)
+	local target_y = appr(obj.y, cam_y, 16)
+	
+	cam_spdx = cam_gain * (target_x - cam_x)
+	cam_spdy = cam_gain * (target_y - cam_y)
 
 	cam_x += cam_spdx
 	cam_y += cam_spdy
