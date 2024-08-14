@@ -45,10 +45,18 @@ function _update()
 		
 		-- clamp objects that need to be clamped
 		if obj.clamps then
-			local clamped = mid(obj.x, -1, lvl_pw - 7)
+			local clamped = obj.x
+			if (lvl_exit ~= "left") clamped = max(-1, clamped)
+			if (lvl_exit ~= "right") clamped = min(lvl_pw - 7, clamped)
+			
 			if obj.x ~= clamped then
 				obj.x = clamped
 				obj.spd.x = 0
+			end
+			-- clamp on top if it's not the exit
+			if lvl_exit ~= "up" and obj.y < -1 then
+				obj.y = -1
+				obj.spd.y = 0
 			end
 		end
 	end)

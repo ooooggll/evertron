@@ -1,11 +1,21 @@
---[[pod_format="raw",created="2024-07-29 20:11:31",modified="2024-08-13 00:17:41",revision=421]]
+--[[pod_format="raw",created="2024-07-29 20:11:31",modified="2024-08-14 16:33:55",revision=523]]
 -- [level loading]
 
 local game_map
 
 function should_exit_level(x, y)
-	-- exit level off the top (except summit)
-	return y < -4 and levels[lvl_id + 1]
+	-- don't exit level at the summit
+	if (not levels[lvl_id + 1]) return false
+	
+	if lvl_exit == "up" then
+		return y < -4
+	elseif lvl_exit == "right" then
+		return x > lvl_pw - 4
+	elseif lvl_exit == "left" then
+		return x < -4
+	elseif lvl_exit == "down" then
+		return y > lvl_ph - 4
+	end
 end
 
 function next_level()
@@ -36,6 +46,11 @@ function load_level(id)
 	-- set level globals
 	local level = levels[lvl_id]
 	lvl_title = level.title -- may be nil
+	
+	-- choose player enter direction based on last level (or it's assigned manually)
+	lvl_enter = diff_level and (level.enter or lvl_exit) or lvl_enter or "up"
+	lvl_exit = level.exit or "up"
+	
 	game_map = fetch(level.map)
 
 	lvl_x, lvl_y, lvl_w, lvl_h = 0, 0, game_map[1].bmp:attribs()
@@ -51,7 +66,7 @@ function load_level(id)
 			local object_type = tiles[tile] or tiles[tile - 0x4000]
 			-- horizontally mirrored map tiles have the 15th bit flipped (aka 0x4000)
 			if object_type then
-				init_object(object_type, tx * 8, ty * 8, tile)
+				local obj = init_object(object_type, tx * 8, ty * 8, tile)
 			end
 		end
 	end
@@ -59,6 +74,7 @@ end
 
 -- copy mapdata string to clipboard
 -- TODO: this is a bit broken -- flipped tiles will lose their flip data
+-- I also don't know how necessary it is because we have basically infinite map space now
 function get_mapdata(x, y, w, h)
 	local reserve = ""
 	for i = 0, w * h - 1 do
@@ -76,7 +92,6 @@ function replace_mapdata(x, y, w, h, data)
 end
 
 function tile_at(x, y, layer)
---	return mget(lvl_x + x, lvl_y + y)
 	return game_map[layer or 1].bmp:get(x, y)
 end
 

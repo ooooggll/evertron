@@ -1,4 +1,4 @@
---[[pod_format="raw",created="2024-07-29 20:10:42",modified="2024-08-13 00:17:41",revision=513]]
+--[[pod_format="raw",created="2024-07-29 20:10:42",modified="2024-08-14 16:33:55",revision=617]]
 -- [objects]
 
 spring = {
@@ -6,7 +6,7 @@ spring = {
 }
 function spring:init()
 	self.delta = 0
-	self.dir = self.spr == 9 and 0 or self.spr == 8 and 1 or -1
+	self.dir = self.flip.x and -1 or self.spr == 9 and 0 or 1
 	self.show = true
 end
 function spring:update()
@@ -38,8 +38,7 @@ function spring:draw()
 		if self.dir == 0 then
 			spr(9, self.x, self.y + delta)
 		else
-			--spr(8, self.dir == -1 and self.x + delta or self.x, self.y, 1 - delta / 8, 1, self.dir == 1)
-			spr(8, self.x + delta * -self.dir, self.y, self.dir == -1)
+			spr(8, self.x + delta * -self.dir, self.y, self.flip.x)
 		end
 	end
 end
@@ -302,7 +301,7 @@ platform = {
 function platform:init()
 	self.x -= 4
 	self.hitbox.w = 16
-	self.dir = self.spr == 0x400f and -1 or 1
+	self.dir = self.flip.x and -1 or 1
 	self.semisolid_obj = true
 end
 function platform:update()
@@ -469,7 +468,7 @@ function init_object(type, x, y, tile)
 		type = type,
 		collideable = true,
 		spr = tile,
-		flip = {x = nil, y = nil},
+		flip = {x = false, y = false},
 		x = x,
 		y = y,
 		hitbox = rectangle(0, 0, 8, 8),
@@ -479,6 +478,11 @@ function init_object(type, x, y, tile)
 		
 		fruit_id = id,
 	}
+	
+	if tile and tile & 0x4000 > 0 then
+		obj.flip.x = true
+		obj.spr -= 0x4000
+	end
 
 	function obj.left() return obj.x + obj.hitbox.x end
 	function obj.right() return obj.left() + obj.hitbox.w - 1 end

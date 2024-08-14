@@ -24,8 +24,13 @@ function player:update()
 	local h_input = btn(1) and 1 or btn(0) and -1 or 0
 	local v_input = btn(2) and -1 or btn(3) and 1 or 0
 
-	-- spike collision / bottom death
-	if spikes_at(self.left(), self.top(), self.right(), self.bottom(), self.spd.x, self.spd.y) or self.y > lvl_ph then
+	-- spike collision
+	if spikes_at(self.left(), self.top(), self.right(), self.bottom(), self.spd.x, self.spd.y) then
+		kill_player(self)
+	end
+	
+	-- fall into pit (unless level exit is down)
+	if self.y > lvl_ph and lvl_exit ~= "down" then
 		kill_player(self)
 	end
 
@@ -196,7 +201,7 @@ function set_hair_color(djump)
 end
 
 function draw_hair(obj)
-	local last = vec(obj.x + (obj.flip.x and 6 or 2), obj.y + (btn(3) and 4 or 3))
+	local last = vec(obj.x + (obj.flip.x and 6 or 2), obj.y + (obj.spr == 6 and 4 or 3))
 	for i, h in ipairs(obj.hair) do
 		h.x += (last.x - h.x) / 1.5
 		h.y += (last.y + 0.5 - h.y) / 1.5
@@ -230,11 +235,27 @@ function player_spawn:init()
 	sfx(4)
 	self.spr = 3
 	self.target = self.y
-	self.y = min(self.y + 48, lvl_ph)
+	
+	if lvl_enter == "up" then
+		self.y = min(self.y + 48, lvl_ph)
+		self.spd.y = -4
+	elseif lvl_enter == "down" then
+		self.y = max(self.y - 48, -4)
+		self.spd.y = 1
+	elseif lvl_enter == "right" then
+		self.spd = vec(2, -1)
+		self.x -= 20
+	elseif lvl_enter == "left" then
+		self.spd = vec(-2, -1)
+		self.x += 20
+		self.flip.x = true
+	end
+	
 	cam_x, cam_y = mid(self.x + 4, 64, lvl_pw - 64), mid(self.y, 64, lvl_ph - 64)
-	self.spd.y = -4
+	
 	self.state = 0
 	self.delay = 0
+	
 	create_hair(self)
 	self.djump = max_djump
 end 
@@ -242,10 +263,12 @@ function player_spawn:update()
 	if self.state == 0 and self.y < self.target + 16 then
 		-- jumping up
 		self.state = 1
-		self.delay = 3
+		if (lvl_enter ~= "down") self.delay = 3
 	elseif self.state == 1 then
 		-- falling
 		self.spd.y += 0.5
+		self.spd.y = min(self.spd.y, 3)
+			
 		if self.spd.y > 0 then
 			if self.delay > 0 then
 				-- stall at peak
@@ -267,7 +290,9 @@ function player_spawn:update()
 		self.spr = 6
 		if self.delay < 0 then
 			destroy_object(self)
-			init_object(player, self.x, self.y).hair = self.hair
+			local p = init_object(player, self.x, self.y)
+			p.hair = self.hair
+			p.flip.x = self.flip.x
 		end
 	end
 end

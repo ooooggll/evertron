@@ -32,26 +32,3 @@ include "player.lua"
 include "objects.lua"
 include "levels.lua"
 include "metadata.lua"
-
--- todo
---[[
-		fix btn calls
-		probably delete the "reload map" part in levels.lua
-		make objects actually spawn
-		make all objects actually spawn
-		multiple map layer support
-		make the "calculate dash speeds" line comprehensible
-		make object dictionary comprehensible
-		clamp player not in the draw function
-		use vec over vector
-		stop using psfx
-		stop using params
-		better object layering?
-		make jumpthroughs draw
-		make memorials type
-		make the noise instrument not sound bad
-		recreate music
-		figure out how multiple levels work (different .map for each one?)
-		make the "100m" thing centered
-	60fps? smoothleste? maybe in a different branch
---]]

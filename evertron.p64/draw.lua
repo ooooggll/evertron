@@ -154,10 +154,8 @@ function draw_time(x, y)
 end
 
 function draw_ui()
-	--rectfill(24, 58, 104, 70, 0)
 	rectfill(game_w / 2 - 40, game_h / 2 - 6, game_w / 2 + 40, game_h / 2 + 4, 0)
 	local title = lvl_title or lvl_id .. "00 m"
-	--?title, 64 - #title * 2, 62, 7
 	center_print(title, game_w / 2, game_h / 2 - 2, 7)
 	draw_time(4, 4)
 end
