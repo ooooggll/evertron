@@ -1,3 +1,6 @@
+## Evertron is now being maintained at https://github.com/CelesteClassic/evertron
+This version is probably outdated by now.
+
 # evertron
 The port of evercore to picotron
 
